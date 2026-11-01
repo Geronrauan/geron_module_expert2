@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto VI — Вся информация</title>
+    <style>
+        /* Сброс базовых стилей и шрифты */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b0b12;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Шапка сайта */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(11, 11, 18, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #ff007f;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg, #ff007f, #00f0ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff007f;
+        }
+
+        /* Главная секция (Hero) */
+        .hero {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle, rgba(255, 0, 127, 0.2) 0%, rgba(11, 11, 18, 1) 80%);
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255, 0, 127, 0.6);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #b3b3b3;
+            max-width: 600px;
+            margin-bottom: 25px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff007f, #7928ca);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* Контентные секции */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #00f0ff;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Карточки персонажей и фич */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #161622;
+            border: 1px solid #2a2a3d;
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #ff007f;
+        }
+
+        .card h3 {
+            color: #ff007f;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: #cccccc;
+            font-size: 0.95rem;
+        }
+
+        /* Таблица с фактами */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: #161622;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .info-table th, .info-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #2a2a3d;
+        }
+
+        .info-table th {
+            background-color: #1f1f30;
+            color: #00f0ff;
+        }
+
+        .info-table td {
+            color: #dddddd;
+        }
+
+        /* Подвал сайта */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #06060a;
+            border-top: 1px solid #2a2a3d;
+            color: #777777;
+            font-size: 0.9rem;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">GTA VI Info</div>
+        <nav>
+            <a href="#about">О игре</a>
+            <a href="#characters">Герои</a>
+            <a href="#location">Локация</a>
+            <a href="#details">Детали</a>
+        </nav>
+    </header>
+
+    <!-- Главный баннер -->
+    <div class="hero">
+        <span class="badge">Самая ожидаемая игра</span>
+        <h1>Grand Theft Auto VI</h1>
+        <p>Добро пожаловать в штат Леонида. Смотрите ключевые факты, подробности сюжета и особенности игрового процесса.</p>
+    </div>
+
+    <div class="container">
+        <!-- Секция: Об игре -->
+        <section id="about">
+            <h2>Об игре</h2>
+            <p>Grand Theft Auto VI от Rockstar Games переносит игроков в штат Леонида (Leonida), вдохновленный Флоридой. Игра предлагает величайший и самый глубокий открытый мир за всю историю серии GTA, с упором на современную культуру социальных сетей и безумные приключения.</p>
+            
+            <table class="info-table">
+                <tr>
+                    <th>Параметр</th>
+                    <th>Информация</th>
+                </tr>
+                <tr>
+                    <td>Разработчик</td>
+                    <td>Rockstar Games</td>
+                </tr>
+                <tr>
+                    <td>Место действия</td>
+                    <td>Штат Леонида (Вайс-Сити и окрестности)</td>
+                </tr>
+                <tr>
+                    <td>Главные герои</td>
+                    <td>Люсия и Джейсон</td>
+                </tr>
+                <tr>
+                    <td>Платформы</td>
+                    <td>PlayStation 5, Xbox Series X/S</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Секция: Главные герои -->
+        <section id="characters">
+            <h2>Главные герои</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Люсия (Lucia)</h3>
+                    <p>Первая женщина-протагонист в современной истории GTA. История начинается с ее пребывания в тюрьме. Рассудительная, решительная и готовая идти на риск ради свободы.</p>
+                </div>
+                <div class="card">
+                    <h3>Джейсон (Jason)</h3>
+                    <p>Напарник и возлюбленный Люсии. Вместе они формируют дуэт в стиле Бонни и Клайда, совершая дерзкие ограбления и скрываясь от законов штата Леонида.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция: Место действия -->
+        <section id="location">
+            <h2>Вайс-Сити и Штат Леонида</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Vice City</h3>
+                    <p>Ослепительный мегаполис с неоновыми огнями, пляжами, богатыми районами и развитой ночной жизнью.</p>
+                </div>
+                <div class="card">
+                    <h3>Kelly County</h3>
+                    <p>Сельская местность и болота, кишащие аллигаторами, местными эксцентричными жителями и заброшенными базами.</p>
+                </div>
+                <div class="card">
+                    <h3>Leonardian Keys</h3>
+                    <p>Тропический архипелаг островов, соединяющий мосты, идеально подходящий для катеров и водных развлечений.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция: Особенности геймплея -->
+        <section id="details">
+            <h2>Особенности игры</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Социальные сети</h3>
+                    <p>Интеграция внутриигрового аналога TikTok/Instagram. Жители штата постоянно снимают вирусные видео и реагируют на действия игрока.</p>
+                </div>
+                <div class="card">
+                    <h3>Продвинутый ИИ</h3>
+                    <p>Проработанное поведение толпы, реалистичный трафик, умные полицейские и детализированная физика воды и авто.</p>
+                </div>
+                <div class="card">
+                    <h3>Ограбления и планирование</h3>
+                    <p>Новая механика взаимодействия в дуэте: координация действий между Люсией и Джейсоном во время преступлений.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; Фанатский информационный сайт о GTA VI. Все права на торговые марки принадлежат Rockstar Games и Take-Two Interactive.</p>
+    </footer>
+
+</body>
+</html>
